@@ -10,7 +10,6 @@ const AddingNewRacket = () => {
   const [price, setPrice] = useState('');
   const [onSale, setOnSale] = useState('');
 
-  //TODO - to add without refreshing whole page has to be reloaded
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -74,7 +73,7 @@ const AddingNewRacket = () => {
           <button
             onClick={handleSubmit}
             type="submit"
-            className="btn btn-secondary"
+            className="btn btn-primary"
           >
             Add
           </button>

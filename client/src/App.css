@@ -1,0 +1,15 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap');
+
+.racket-list {
+  background-color: rgba(157, 204, 202, 0.507);
+}
+
+.container {
+  /* background: yellow*/
+  font-family: 'Changa', sans-serif;
+}
+
+.title {
+}

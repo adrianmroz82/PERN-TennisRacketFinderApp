@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import RacketFinder from '../apis/RacketFinder';
 import { RacketsContext } from '../context/RacketContext';
 import { useHistory } from 'react-router-dom';
+import '../App.css';
 
 const RacketList = (props) => {
   const { rackets, setRackets } = useContext(RacketsContext);
@@ -48,15 +49,14 @@ const RacketList = (props) => {
   };
 
   return (
-    <div>
+    <div className="racket-list">
       <table className="mt-4 table-hover table table-secondary">
         <thead>
-          <tr className="bg-warning">
+          <tr>
             <th scope="col">Brand</th>
             <th scope="col">Model</th>
             <th scope="col">Price</th>
             <th scope="col">On sale</th>
-            <th scope="col">Rating</th>
             <th scope="col">Change</th>
             <th scope="col">Remove</th>
           </tr>
@@ -67,7 +67,7 @@ const RacketList = (props) => {
               <tr onClick={() => handleSelectRacket(el.id)} key={el.id}>
                 <td>{el.brand}</td>
                 <td>{el.model}</td>
-                <td>{el.price}</td>
+                <td>{'$'.repeat(el.price)}</td>
                 <td>
                   {(() => {
                     if (el.on_sale === true) {
@@ -76,7 +76,7 @@ const RacketList = (props) => {
                     return <p style={{ color: 'red' }}>Not avaliable</p>;
                   })()}
                 </td>
-                <td>RATING</td>
+
                 <td>
                   <button
                     onClick={(e) => handleChange(e, el.id)}
