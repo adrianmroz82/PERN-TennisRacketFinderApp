@@ -3,8 +3,8 @@
 Right now application doesn't work by hand. For now, the database is created locally. The process of deploying app to make it fully work is in progress.
 
 
-A simple application for tennis fan, which allows to add, update and remove rackets
-### To run an application, firstly start a server (path pern/server) and then a client (path pern/client) with  `npm start`
+A Fullstack application for tennis fan, which allows to add, update and remove rackets
+### To run an application, firstly create #postgres database, and follow steps in path server/db.sql. Then, start a server (path pern/server) and a client (path pern/client) with  `npm start`
 
 ## Tech Stack
 
