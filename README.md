@@ -1,4 +1,7 @@
 # Tennis Racket Finder Application
+## TODO
+Right now application doesn't work by hand. For now, the database is created locally. The process of deploying app to make it fully work is in progress.
+
 
 A simple application for tennis fan, which allows to add, update and remove rackets
 ### To run an application, firstly start a server (path pern/server) and then a client (path pern/client) with  `npm start`
